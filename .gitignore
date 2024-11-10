@@ -1,0 +1,35 @@
+# Node.js (for backend)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+# .env files (sensitive environment variables)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# macOS Finder folder attributes
+.DS_Store
+
+# IDE settings (optional, depending on your environment)
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Coverage directory (for testing)
+coverage/
+
+# Temporary files created by IDEs or build tools
+*.swp
+*.swo
+
+# Frontend (if not using React, adjust accordingly)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
