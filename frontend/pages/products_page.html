@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/products_page.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Choose Products</title>
+  </head>
+  <body>
+    <div class="div-container">
+      <h1>SV-shop</h1>
+
+      <div class="sort-options">
+        <select id="sort-option">
+          <option value="name">Sort by Name</option>
+          <option value="price">Sort by Price</option>
+        </select>
+        <button onclick="sortProducts()">Sort</button>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search product by name"
+          oninput="searchProducts()"
+        />
+      </div>
+
+      <div id="product-list" class="products-container"></div>
+
+      <div class="total-price">
+        <button onclick="handleBuyButtonClick()">Buy</button>
+      </div>
+    </div>
+
+    <script src="../scripts/products_main.js"></script>
+  </body>
+</html>
